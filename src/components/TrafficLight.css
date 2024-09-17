@@ -1,0 +1,96 @@
+.bg {
+    /*background: linear-gradient(to top, rgb(0,0,0,0.7), #000000b3), url("https://images.pexels.com/photos/302718/pexels-photo-302718.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");*/
+    background-image: url("https://images.pexels.com/photos/302718/pexels-photo-302718.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover; 
+    background-position: center; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    text-align: center; 
+}
+.lights-container {
+    background-color: black;
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px; 
+}
+
+.light {
+    padding: 8px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    margin-bottom: 20px;
+    color: #fff;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.5s ease, opacity 0.5s ease; 
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+    color: black; 
+}
+
+.green {
+    background-color: green;
+}
+
+.light-off {
+    background-color: white;
+    opacity: 0.2;  
+}
+
+.Pedestrian {
+    background-color: gray;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.Active-Pedestrian{
+    color: yellow;
+    background-color: green;
+    animation: blink-animation 1s infinite;
+}
+@keyframes blink-animation {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+}
+
+button:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+}
+
